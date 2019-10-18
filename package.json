@@ -3,6 +3,7 @@
 	"displayName": "hbuilderx-shortcuts：将hbuilderx快捷键应用于vscode",
 	"description": "hbuilderx-shortcuts",
 	"keywords": ["vscode", "hbuilder", "hbuilderx","shortcuts"],
+	"publisher": "jc-ge",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.39.0"
