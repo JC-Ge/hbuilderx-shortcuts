@@ -4,8 +4,8 @@
 	"description": "hbuilderx-shortcuts",
 	"keywords": ["vscode", "hbuilder", "hbuilderx","shortcuts"],
 	"publisher": "jc-ge",
-	"version": "0.0.1",
-	"icon": "test/taiji.png",
+	"version": "0.0.2",
+	"icon": "taiji.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/jc-ge/hbuilderx-shortcuts"
