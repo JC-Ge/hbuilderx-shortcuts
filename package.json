@@ -6,6 +6,10 @@
 	"publisher": "jc-ge",
 	"version": "0.0.1",
 	"icon": "test/taiji.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jc-ge/hbuilderx-shortcuts"
+	},
 	"engines": {
 		"vscode": "^1.39.0"
 	},
