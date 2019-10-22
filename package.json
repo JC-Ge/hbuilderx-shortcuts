@@ -5,7 +5,7 @@
 	"keywords": ["vscode", "hbuilder", "hbuilderx","shortcuts"],
 	"publisher": "jc-ge",
 	"version": "0.0.1",
-	"icon": "/test/taiji.png",
+	"icon": "test/taiji.png",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
