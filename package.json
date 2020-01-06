@@ -4,7 +4,7 @@
 	"description": "hbuilderx-shortcuts",
 	"keywords": ["vscode", "hbuilder", "hbuilderx","shortcuts"],
 	"publisher": "jc-ge",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"icon": "taiji.png",
 	"repository": {
 		"type": "git",
@@ -349,11 +349,6 @@
 			"when": "textInputFocus && !editorReadonly"
 		},
 		{
-			"key": "ctrl+k ctrl+c",
-			"command": "editor.action.addCommentLine",
-			"when": "editorTextFocus && !editorReadonly"
-		},
-		{
 			"key": "shift+alt+oem_period",
 			"command": "editor.action.autoFix",
 			"when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
@@ -602,11 +597,6 @@
 			"key": "shift+f12",
 			"command": "editor.action.referenceSearch.trigger",
 			"when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-		},
-		{
-			"key": "ctrl+k ctrl+u",
-			"command": "editor.action.removeCommentLine",
-			"when": "editorTextFocus && !editorReadonly"
 		},
 		{
 			"key": "f12",

@@ -1,9 +1,8 @@
 # Change Log
 
-All notable changes to the "hbuilderx-shortcuts" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Unreleased]
 
-- Initial release
+## [0.0.3] - 2019-10-06
+### Fixed
+- Fix the 'ctrl+k'.
