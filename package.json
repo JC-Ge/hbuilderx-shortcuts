@@ -409,11 +409,6 @@
 			"when": "editorTextFocus && !editorReadonly"
 		},
 		{
-			"key": "ctrl+k ctrl+k",
-			"command": "editor.action.defineKeybinding",
-			"when": "editorTextFocus && !editorReadonly && editorLangId == 'jsonc'"
-		},
-		{
 			"key": "ctrl+d",
 			"command": "editor.action.deleteLines",
 			"when": "textInputFocus && !editorReadonly"
@@ -459,12 +454,7 @@
 			"when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
 		},
 		{
-			"key": "shift+alt+f",
-			"command": "editor.action.formatDocument.none",
-			"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
-		},
-		{
-			"key": "ctrl+k ctrl+f",
+			"key": "ctrl+k",
 			"command": "editor.action.formatSelection",
 			"when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
 		},
@@ -644,11 +634,6 @@
 			"when": "textInputFocus"
 		},
 		{
-			"key": "ctrl+k ctrl+i",
-			"command": "editor.action.showHover",
-			"when": "editorTextFocus"
-		},
-		{
 			"key": "shift+alt+right",
 			"command": "editor.action.smartSelect.expand",
 			"when": "editorTextFocus"
@@ -679,11 +664,6 @@
 			"key": "ctrl+/",
 			"command": "editor.action.triggerSuggest",
 			"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-		},
-		{
-			"key": "ctrl+k ctrl+x",
-			"command": "editor.action.trimTrailingWhitespace",
-			"when": "editorTextFocus && !editorReadonly"
 		},
 		{
 			"key": "enter",
@@ -741,66 +721,6 @@
 			"when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
 		},
 		{
-			"key": "ctrl+shift+oem_4",
-			"command": "editor.fold",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+0",
-			"command": "editor.foldAll",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+oem_2",
-			"command": "editor.foldAllBlockComments",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+8",
-			"command": "editor.foldAllMarkerRegions",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+1",
-			"command": "editor.foldLevel1",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+2",
-			"command": "editor.foldLevel2",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+3",
-			"command": "editor.foldLevel3",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+4",
-			"command": "editor.foldLevel4",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+5",
-			"command": "editor.foldLevel5",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+6",
-			"command": "editor.foldLevel6",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+7",
-			"command": "editor.foldLevel7",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+oem_4",
-			"command": "editor.foldRecursively",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
 			"key": "f12",
 			"command": "editor.gotoNextSymbolFromResult",
 			"when": "hasSymbols && config.editor.gotoLocation.multiple == 'goto'"
@@ -809,31 +729,6 @@
 			"key": "escape",
 			"command": "editor.gotoNextSymbolFromResult.cancel",
 			"when": "hasSymbols"
-		},
-		{
-			"key": "ctrl+k ctrl+l",
-			"command": "editor.toggleFold",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+shift+oem_6",
-			"command": "editor.unfold",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+j",
-			"command": "editor.unfoldAll",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+9",
-			"command": "editor.unfoldAllMarkerRegions",
-			"when": "editorTextFocus && foldingEnabled"
-		},
-		{
-			"key": "ctrl+k ctrl+oem_6",
-			"command": "editor.unfoldRecursively",
-			"when": "editorTextFocus && foldingEnabled"
 		},
 		{
 			"key": "tab",
@@ -1638,7 +1533,7 @@
 			"command": "workbench.action.closeAllEditors"
 		},
 		{
-			"key": "ctrl+k w",
+			"key": "ctrl+w",
 			"command": "workbench.action.closeEditorsInGroup"
 		},
 		{
