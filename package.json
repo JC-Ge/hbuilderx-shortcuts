@@ -4,7 +4,7 @@
 	"description": "hbuilderx-shortcuts",
 	"keywords": ["vscode", "hbuilder", "hbuilderx","shortcuts"],
 	"publisher": "jc-ge",
-	"version": "0.0.4",
+	"version": "0.0.6",
 	"icon": "taiji.png",
 	"repository": {
 		"type": "git",
@@ -446,7 +446,12 @@
 		{
 			"key": "ctrl+k",
 			"command": "editor.action.formatDocument",
-			"when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+			"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
+		},
+		{
+			"key": "ctrl+k",
+			"command": "editor.action.formatDocument.none",
+			"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
 		},
 		{
 			"key": "ctrl+k",
@@ -1646,24 +1651,12 @@
 			"when": "remoteFileDialogVisible"
 		},
 		{
-			"key": "ctrl+k ctrl+shift+s",
-			"command": "workbench.action.files.saveWithoutFormatting"
-		},
-		{
 			"key": "ctrl+k o",
 			"command": "workbench.action.files.showOpenedFileInNewWindow"
 		},
 		{
 			"key": "ctrl+shift+f",
 			"command": "workbench.action.findInFiles"
-		},
-		{
-			"key": "ctrl+k ctrl+up",
-			"command": "workbench.action.focusAboveGroup"
-		},
-		{
-			"key": "ctrl+k ctrl+down",
-			"command": "workbench.action.focusBelowGroup"
 		},
 		{
 			"key": "ctrl+8",
@@ -1680,14 +1673,6 @@
 		{
 			"key": "ctrl+4",
 			"command": "workbench.action.focusFourthEditorGroup"
-		},
-		{
-			"key": "ctrl+k ctrl+left",
-			"command": "workbench.action.focusLeftGroup"
-		},
-		{
-			"key": "ctrl+k ctrl+right",
-			"command": "workbench.action.focusRightGroup"
 		},
 		{
 			"key": "ctrl+2",
@@ -1745,10 +1730,6 @@
 		{
 			"key": "ctrl+k enter",
 			"command": "workbench.action.keepEditor"
-		},
-		{
-			"key": "ctrl+k ctrl+r",
-			"command": "workbench.action.keybindingsReference"
 		},
 		{
 			"key": "ctrl+9",
@@ -1851,10 +1832,6 @@
 			"command": "workbench.action.openEditorAtIndex9"
 		},
 		{
-			"key": "ctrl+k ctrl+s",
-			"command": "workbench.action.openGlobalKeybindings"
-		},
-		{
 			"key": "ctrl+tab",
 			"command": "workbench.action.openNextRecentlyUsedEditorInGroup"
 		},
@@ -1900,10 +1877,6 @@
 			"when": "searchViewletVisible"
 		},
 		{
-			"key": "ctrl+k ctrl+p",
-			"command": "workbench.action.showAllEditors"
-		},
-		{
 			"key": "f1",
 			"command": "workbench.action.showCommands"
 		},
@@ -1914,10 +1887,6 @@
 		{
 			"key": "ctrl+oem_5",
 			"command": "workbench.action.splitEditor"
-		},
-		{
-			"key": "ctrl+k ctrl+oem_5",
-			"command": "workbench.action.splitEditorOrthogonal"
 		},
 		{
 			"key": "ctrl+shift+b",
@@ -2176,10 +2145,6 @@
 		{
 			"key": "ctrl+shift+y",
 			"command": "workbench.debug.action.toggleRepl"
-		},
-		{
-			"key": "ctrl+k ctrl+m",
-			"command": "workbench.extensions.action.showRecommendedKeymapExtensions"
 		},
 		{
 			"key": "ctrl+k c",
