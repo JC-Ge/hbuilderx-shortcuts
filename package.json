@@ -4,14 +4,14 @@
 	"description": "hbuilderx-shortcuts",
 	"keywords": ["vscode", "hbuilder", "hbuilderx","shortcuts"],
 	"publisher": "jc-ge",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"icon": "taiji.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/jc-ge/hbuilderx-shortcuts"
 	},
 	"engines": {
-		"vscode": "^1.39.0"
+		"vscode": "^1.42.0"
 	},
 	"categories": [
 		"Other"
@@ -19,26 +19,8 @@
 	"activationEvents": [
 		"onCommand:extension.helloWorld"
 	],
-	"main": "./extension.js",
-	"scripts": {
-		"test": "node ./test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.39.0",
-		"eslint": "^5.13.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
-		"vscode-test": "^1.2.0"
-	},
+	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-            "command": "extension.helloWorld",
-			"title": "Hello World"
-		}],
 		"keybindings":[{
 			"key":"alt+shift+u",
 			"command":"editor.action.transformToUppercase",
@@ -446,7 +428,7 @@
 		{
 			"key": "ctrl+k",
 			"command": "editor.action.formatDocument",
-			"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
+			"when": "editorTextFocus && editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && !editorReadonly"
 		},
 		{
 			"key": "ctrl+k",
@@ -1203,16 +1185,6 @@
 		{
 			"key": "ctrl+c",
 			"command": "keybindings.editor.copyKeybindingEntry",
-			"when": "inKeybindings && keybindingFocus"
-		},
-		{
-			"key": "ctrl+k ctrl+k",
-			"command": "keybindings.editor.defineKeybinding",
-			"when": "inKeybindings && keybindingFocus"
-		},
-		{
-			"key": "ctrl+k ctrl+e",
-			"command": "keybindings.editor.defineWhenExpression",
 			"when": "inKeybindings && keybindingFocus"
 		},
 		{
@@ -2782,6 +2754,26 @@
 			"when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
 		}
 		]
-		
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.1",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.42.0",
+		"eslint": "^6.8.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.0.1",
+		"typescript": "^3.7.5",
+		"vscode-test": "^1.3.0"
 	}
 }
