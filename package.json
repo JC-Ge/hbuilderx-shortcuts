@@ -663,8 +663,13 @@
 				"when": "editorTextFocus && inDebugMode"
 			},
 			{
-				"key": "f9",
-				"command": "editor.debug.action.toggleBreakpoint",
+				"key": "f2",
+				"command": "editor.debug.action.goToNextBreakpoint",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "shift+f2",
+				"command": "editor.debug.action.goToPreviousBreakpoint",
 				"when": "editorTextFocus"
 			},
 			{
@@ -2186,11 +2191,6 @@
 				"key": "delete",
 				"command": "moveFileToTrash",
 				"when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-			},
-			{
-				"key": "f2",
-				"command": "renameFile",
-				"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 			},
 			{
 				"key": "f11",
