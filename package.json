@@ -1,8 +1,8 @@
 {
 	"name": "hbuilderx-shortcuts",
 	"displayName": "hbuilderx-shortcuts",
-	"description": "hbuilderx-shortcuts",
-	"keywords": ["vscode", "hbuilder", "hbuilderx", "shortcuts"],
+	"description": "integrate hbuilderx's shortcuts and snippets to vscode",
+	"keywords": ["vscode", "hbuilder", "hbuilderx", "shortcut","snippet"],
 	"publisher": "jc-ge",
 	"version": "0.0.9",
 	"icon": "taiji.png",
