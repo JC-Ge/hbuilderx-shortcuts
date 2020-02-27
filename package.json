@@ -21,6 +21,12 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			}
+		],
 		"keybindings": [{
 				"key": "alt+shift+u",
 				"command": "editor.action.transformToUppercase",

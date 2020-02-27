@@ -1,0 +1,28 @@
+{
+    "forEach": {
+      "prefix": "fe",
+      "body": [
+        "${1:array}.forEach(function(item) {",
+        "\t${2:// body}",
+        "});"
+      ],
+      "description": "Code snippet for \"forEach\""
+    },
+    "setTimeout": {
+      "prefix": "st",
+      "body": [
+        "setTimeout(function() {",
+        "\t${1:// body}",
+        "}, ${2:1000});"
+      ],
+      "description": "Code snippet for 'setTimeout'"
+    },
+    "console.log": {
+      "prefix": "clog",
+      "body": [
+        "console.log(${1:content});"
+      ],
+      "description": "Code snippet for 'console.log'"
+    }
+  }
+  

@@ -2,11 +2,7 @@
 
 ## Features
 
-Replace the shortcut key of vscode with the shortcut key of hbuilderX.
+- Migrate the shortcut key of hbuilderx to vscode.
+- Add hbuilderx snippets to vscode.
 
-## Release Notes
-
-### 0.0.7 add 'ctrl+k'
-
-Initial release of hbuilderx-shortcuts
 
