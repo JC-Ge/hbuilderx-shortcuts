@@ -4,7 +4,7 @@
 	"description": "integrate hbuilderx's shortcuts and snippets to vscode",
 	"keywords": ["vscode", "hbuilder", "hbuilderx", "shortcut","snippet"],
 	"publisher": "jc-ge",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"icon": "taiji.png",
 	"repository": {
 		"type": "git",
